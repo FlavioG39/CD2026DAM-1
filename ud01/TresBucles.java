@@ -15,7 +15,8 @@ public class TresBucles {
             j++;
         }
 
-        bucleInterno();
+        imprimirBucleInterno();
+        int kk = sumar(4, 3);
 
         // 3. Bucle DO-WHILE
         int k = 1;
@@ -26,12 +27,20 @@ public class TresBucles {
         } while (k <= 3);
     }
 
-    public static void bucleInterno(){
+    public static void imprimirBucleInterno(){
         int k = 1;
 
         do {
             System.out.println("DO-WHILE: " + k);
             k++;
         }while (k <= 3);
+    }
+
+    public static int sumar(int a, int b){
+        int resultado;
+
+        resultado = a + b;
+
+        return resultado;
     }
 }
